@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-5">
               <div className="left-container text-start">
-                <h1>Travel-Hype</h1>
+                <h1>Road-Eagles</h1>
                 <div className="icons-container d-flex text-center ">
                   <div className="icon">
                     <FontAwesomeIcon icon={faInstagramSquare} />
@@ -42,7 +42,7 @@ const Footer = () => {
                 </p>
 
                 <p className="mt-5">
-                  <small>Travel-Hype © . All rights reserved.</small>
+                  <small>Road-Eagles © . All rights reserved.</small>
                 </p>
               </div>
             </div>
@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
             <div className="col-md-5">
               <div className="right-footer-container">
-                <h3>Sign up for <br /> the Travel-Hype</h3>
+                <h3>Sign up for <br /> the Road-Eagles</h3>
                 <input
                   className="footer-input"
                   type="text"

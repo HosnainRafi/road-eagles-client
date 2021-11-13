@@ -21,7 +21,7 @@ const About = () => {
 
                 </div>
                 <div className="col-md-5">
-                    <h3>travel-hype team of guides</h3>
+                    <h3>Road-Eagles team of guides</h3>
                     <h1>Our dedicated</h1>
                     <h1 className="about-title">Holiday-Hype team</h1>
                     <br />

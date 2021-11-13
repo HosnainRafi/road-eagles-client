@@ -23,7 +23,7 @@ const Service = ({ service }) => {
                     </div>
                     <h3>Price: <span style={{ color: "goldenrod" }}>{price}$</span></h3>
                     <Link to={`/booking/${_id}`} >
-                        <button className="btn btn-danger">Explore Now</button>
+                        <button className="btn btn-danger">Buy Now</button>
                     </Link>
                     
                 </div>

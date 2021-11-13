@@ -28,11 +28,11 @@ const Contact = () => {
                             <div className="row">
                                 <div className="col-md-6">
                                     <h3>Facebook :</h3>
-                                    <p>www.faccebook.com/travel-hype</p>
+                                    <p>www.faccebook.com/Road-Eagles</p>
                                 </div>
                                 <div className="col-md-6">
                                     <h3>Skype:</h3>
-                                    <p>www.skype.com/travel-hype</p>
+                                    <p>www.skype.com/Road-Eagles</p>
                                 </div>
                                 <hr />
                             </div>
