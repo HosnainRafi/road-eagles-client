@@ -1,18 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 
-const Service = ({ service }) => {
+const Service = ({ service, handleDelete ,admin}) => {
 
     const { _id, name, description, Mileage, Engine, img, price } = service;
 
+
+    // const { admin } = useAuth();
+
     return (
-        
+
         <div className="col-md-4 g-4">
             <div class="card" style={{ width: "18rem" }}>
                 <img src={img} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h4 class="card-title">{name}</h4>
-                    <p class="card-text">{description.slice(0,180)}</p>
+                    <p class="card-text">{description.slice(0, 180)}</p>
                     <div className="row">
                         <div className="col-md-6">
                             <h5 style={{ color: "brown" }}>Mileage: {Mileage}kmpl</h5>
@@ -22,10 +26,21 @@ const Service = ({ service }) => {
                         </div>
                     </div>
                     <h3>Price: <span style={{ color: "goldenrod" }}>{price}$</span></h3>
-                    <Link to={`/booking/${_id}`} >
-                        <button className="btn btn-danger">Buy Now</button>
-                    </Link>
-                    
+
+                    {admin ? (
+                        <button
+                            onClick={() => handleDelete(_id)}
+                            className="rounded-pill px-3 py-2 btn text-white"
+                            style={{ backgroundColor: "#ff6600" }}
+                        >
+                            Remove
+                        </button>
+                    ) : (
+                        <Link to={`/booking/${_id}`} >
+                            <button className="btn btn-danger">Buy Now</button>
+                        </Link>
+                    )}
+
                 </div>
             </div>
         </div>

@@ -76,7 +76,7 @@ const ManageOrder = () => {
 
     return (
         <div className="container-fluid">
-            <h2>My Events</h2>
+            <h2>All Events</h2>
 
             <Table striped bordered>
                 <thead>
