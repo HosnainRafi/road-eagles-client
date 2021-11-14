@@ -26,7 +26,7 @@ const Order = () => {
         data.Mileage = service?.Mileage;
         data.Engine = service?.Engine;
         data.img = service?.img;
-        // data.status = status;
+        data.state = "pending";
         fetch("http://localhost:5000/addEvent", {
             method: "POST",
             headers: { "content-type": "application/json" },

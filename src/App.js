@@ -14,13 +14,13 @@ import Order from './Pages/Services/Order/Order';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Pay from './Pages/Pay/Pay';
 import MyOrder from './Pages/MyOrder/MyOrder';
-import Review from './Pages/Review/Review';
+import Review from './Pages/CommentSection/CommentSection';
+import Dashboard from './Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <Header></Header>
         <Switch>
           <Route exact path='/'>
             <Home></Home>
@@ -47,6 +47,9 @@ function App() {
           <PrivateRoute path='/review'>
             <Review></Review>
           </PrivateRoute>
+          <PrivateRoute path='/dashboard'>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
           <Route path='/login'>
             <Login></Login>
           </Route>
@@ -60,7 +63,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
-        <Footer></Footer>
+
       </Router>
     </AuthProvider>
   );
