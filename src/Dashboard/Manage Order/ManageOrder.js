@@ -58,17 +58,17 @@ const ManageOrder = () => {
         if (order?.state === "pending") {
             axios
                 .put(`http://localhost:5000/updateState/${id}`, {
-                    state: "Approved",
+                    state: "Shipped",
                 })
                 .then((res) => {
                     if (res.data.modifiedCount) {
                         console.log(res.data);
-                        order.state = "Approved";
+                        order.state = "Shipped";
                         const modified = orders.map((item) =>
                             item._id === id ? order : item
                         );
                         setOrders(modified);
-                        swal("Congratulations!", "Your Order is Approved", "success");
+                        swal("Congratulations!", "Your Order is Shipped successfully", "success");
                     }
                 });
         }

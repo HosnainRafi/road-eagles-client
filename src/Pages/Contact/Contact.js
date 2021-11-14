@@ -4,6 +4,7 @@ import img from '../../images/map.jpg'
 const Contact = () => {
     return (
         <div>
+            <div className="mx-auto text-center m-4 py-4"><h1 style={{color:"goldenrod"}}>Contact</h1></div>
             <div className="container contact-container container-fluid">
                 <div className="contact-info">
                     <div className="row">

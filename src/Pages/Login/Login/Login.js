@@ -5,6 +5,8 @@ import { Grid } from '@mui/material';
 import useAuth from '../../../Hooks/useAuth';
 import { NavLink } from 'react-router-dom';
 import login from '../../../images/login.jfif'
+import Header from '../../Header/Header';
+import Footer from '../../Footer/Footer';
 
 const Login = () => {
     const [loginData,setLoginData] = useState({});
@@ -32,6 +34,8 @@ const Login = () => {
 
 
     return (
+        <>
+        <Header></Header>
         <Container>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
@@ -71,6 +75,8 @@ const Login = () => {
                 </Grid>
             </Grid>
         </Container>
+        <Footer></Footer>
+        </>
     );
 };
 

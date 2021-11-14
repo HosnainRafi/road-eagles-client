@@ -5,6 +5,8 @@ import useAuth from '../../../Hooks/useAuth';
 import { NavLink} from 'react-router-dom';
 import login from '../../../images/login.jfif'
 import swal from 'sweetalert';
+import Footer from '../../Footer/Footer';
+import Header from '../../Header/Header';
 
 const Register = () => {
 
@@ -31,6 +33,8 @@ const Register = () => {
 
 
     return (
+        <>
+        <Header></Header>
         <Container>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
@@ -84,6 +88,8 @@ const Register = () => {
                 </Grid>
             </Grid>
         </Container>
+        <Footer></Footer>
+        </>
     );
 };
 
