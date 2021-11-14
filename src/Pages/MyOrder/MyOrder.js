@@ -9,7 +9,7 @@ const MyOrder = () => {
     const {user} = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myEvents/${user?.email}`)
+        fetch(`https://calm-dawn-94337.herokuapp.com/myEvents/${user?.email}`)
         .then(res => res.json())
         .then(data => setEvents(data));
     },[user.email]);
@@ -27,7 +27,7 @@ const MyOrder = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`http://localhost:5000/deleteEvents/${id}`, {
+                    fetch(`https://calm-dawn-94337.herokuapp.com/deleteEvents/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])

@@ -9,7 +9,7 @@ const CommentSection = () => {
     const [reviews, setReview] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/user/review')
+        fetch('https://calm-dawn-94337.herokuapp.com/user/review')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

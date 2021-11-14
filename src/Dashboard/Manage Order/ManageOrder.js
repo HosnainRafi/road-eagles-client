@@ -11,7 +11,7 @@ const ManageOrder = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allEvents`)
+        fetch(`https://calm-dawn-94337.herokuapp.com/allEvents`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [user.email]);
@@ -28,7 +28,7 @@ const ManageOrder = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`http://localhost:5000/deleteEvents/${id}`, {
+                    fetch(`https://calm-dawn-94337.herokuapp.com/deleteEvents/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])
@@ -57,7 +57,7 @@ const ManageOrder = () => {
 
         if (order?.state === "pending") {
             axios
-                .put(`http://localhost:5000/updateState/${id}`, {
+                .put(`https://calm-dawn-94337.herokuapp.com/updateState/${id}`, {
                     state: "Shipped",
                 })
                 .then((res) => {
