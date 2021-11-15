@@ -60,7 +60,7 @@ const Contact = () => {
                             <label for="floatingName">Name</label>
                         </div>
                         <div>
-                            <textarea placeholder="Type Your Problem" name="instruction" id="" cols="40" rows="4"></textarea>
+                            <textarea placeholder="Type Your Problem" name="instruction" id="" cols="20" rows="4"></textarea>
                         </div>
                     <button class=" btn btn-lg btn-primary mb-4" type="submit">Submit </button>
                 </div>
